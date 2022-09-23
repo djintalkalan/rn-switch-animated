@@ -1,0 +1,40 @@
+{
+  "name": "rn-switch-animated",
+  "version": "0.1.0",
+  "description": "An animated switch component",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Print: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djintalkalan/rn-switch-animated.git"
+  },
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "react native",
+    "mobile",
+    "ios",
+    "android",
+    "switch",
+    "animated",
+    "animated switch",
+    "switch animated",
+    "component"
+  ],
+  "author": "Deepak Jaglan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/djintalkalan/rn-switch-animated/issues"
+  },
+  "homepage": "https://github.com/djintalkalan/rn-switch-animated#readme",
+  "peerDependencies": {
+    "react-native": ">= 0.25"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
