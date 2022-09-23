@@ -21,13 +21,12 @@ interface SwitchAnimatedProps {
 
 
 const SwitchAnimated: FC<SwitchAnimatedProps> = (props) => {
-    const { activeColor, size = 60, animationSpeed = 100, elevation = 0, inactiveColor, activeKnobColor = 'white', inactiveKnobColor = 'white', onChange, activeText = '', activeTextStyle, inactiveTextStyle, textStyle, inactiveText = '', value } = props
+    const { activeColor, size: SIZE = 60, animationSpeed = 100, elevation = 0, inactiveColor, activeKnobColor = 'white', inactiveKnobColor = 'white', onChange, activeText = '', activeTextStyle, inactiveTextStyle, textStyle, inactiveText = '', value } = props
     const translateX = useRef(new Animated.Value(0)).current;
-    const SIZE = size;
 
     useEffect(() => {
         Animated.timing(translateX, {
-            toValue: value ? -size * 0.75 : -size * 0.25,// -SIZE * 0.27 : -SIZE * 0.8,
+            toValue: value ? -SIZE * 0.25 : -SIZE * 0.75,
             duration: animationSpeed,
             useNativeDriver: false,
             //@ts-ignore
@@ -81,7 +80,6 @@ const SwitchAnimated: FC<SwitchAnimatedProps> = (props) => {
             },
             inActiveText: {
                 color: "white",
-                fontWeight: '600',
                 fontSize: 12,
                 ...StyleSheet.flatten(textStyle || {}),
                 ...StyleSheet.flatten(activeTextStyle || {}),
@@ -92,7 +90,6 @@ const SwitchAnimated: FC<SwitchAnimatedProps> = (props) => {
             },
             activeText: {
                 color: "white",
-                fontWeight: '600',
                 fontSize: 12,
                 ...(StyleSheet.flatten(textStyle || {})),
                 ...StyleSheet.flatten(inactiveTextStyle || {}),

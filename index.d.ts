@@ -20,6 +20,6 @@ declare module "rn-switch-animated" {
         size: number
     }
 
-    export default function SwitchAnimated(props: SwitchAnimatedProps): React.FC<SwitchAnimatedProps>
+    export default function SwitchAnimated(props: SwitchAnimatedProps): JSX.Element
 
 }
