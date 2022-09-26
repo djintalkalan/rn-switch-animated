@@ -1,8 +1,7 @@
 # rn-switch-animated
-It's an switch with animation.
+This is a switch component with animation. We can add custom text for on/off state and these are optionals, also can control background and knob color for both on and off state.
 
-![](working.gif)
-
+<img src="working.gif" width="300px">
 
 # USAGE
 
@@ -17,7 +16,7 @@ This library is using @react-native-community/masked-view. Please install if not
 yarn add @react-native-community/masked-view
 ```
 
-İmport library
+Import library
 ```
 import Switch from 'rn-switch-animated';
 ```
@@ -40,7 +39,7 @@ use component
 ```
 
 
-SwitchProps
+SwitchAnimatedProps
 ```
     value: boolean,
     onChange: (newValue: boolean, e?: GestureResponderEvent) => void,
