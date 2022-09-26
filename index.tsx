@@ -2,7 +2,7 @@ import MaskedView from "@react-native-community/masked-view";
 import React, { FC, useCallback, useEffect, useMemo, useRef } from "react";
 import { Animated, Easing, GestureResponderEvent, StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View } from "react-native";
 
-interface SwitchAnimatedProps {
+export interface SwitchProps {
     value: boolean,
     onChange: (newValue: boolean, e?: GestureResponderEvent) => void,
     activeKnobColor?: string,
@@ -16,13 +16,28 @@ interface SwitchAnimatedProps {
     activeTextStyle?: StyleProp<TextStyle>
     inactiveTextStyle?: StyleProp<TextStyle>
     textStyle?: StyleProp<TextStyle>
-    size: number
+    size?: number
 }
 
 
-const SwitchAnimated: FC<SwitchAnimatedProps> = (props) => {
-    const { activeColor, size: SIZE = 60, animationSpeed = 100, elevation = 0, inactiveColor, activeKnobColor = 'white', inactiveKnobColor = 'white', onChange, activeText = '', activeTextStyle, inactiveTextStyle, textStyle, inactiveText = '', value } = props
-    const translateX = useRef(new Animated.Value(0)).current;
+const Switch: FC<SwitchProps> = ({
+    value,
+    onChange,
+    activeColor,
+    inactiveColor,
+    size: SIZE = 60,
+    animationSpeed = 100,
+    elevation = 0,
+    activeKnobColor = '#fff',
+    inactiveKnobColor = '#fff',
+    activeText = '',
+    inactiveText = '',
+    activeTextStyle,
+    inactiveTextStyle,
+    textStyle,
+}) => {
+
+    const translateX = useRef(new Animated.Value(value ? -SIZE * 0.25 : -SIZE * 0.75)).current;
 
     useEffect(() => {
         Animated.timing(translateX, {
@@ -131,4 +146,4 @@ const SwitchAnimated: FC<SwitchAnimatedProps> = (props) => {
     );
 }
 
-export default SwitchAnimated
+export default Switch

@@ -2,7 +2,7 @@
   "name": "rn-switch-animated",
   "version": "0.1.2",
   "description": "An animated switch component",
-  "main": "index.js",
+  "main": "index.tsx",
   "private": false,
   "scripts": {
     "test": "echo \"Print: no test specified\""
