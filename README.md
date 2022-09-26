@@ -39,7 +39,7 @@ use component
 ```
 
 
-SwitchAnimatedProps
+SwitchProps
 ```
     value: boolean,
     onChange: (newValue: boolean, e?: GestureResponderEvent) => void,
