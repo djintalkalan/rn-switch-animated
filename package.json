@@ -1,6 +1,6 @@
 {
   "name": "rn-switch-animated",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "An animated switch component",
   "main": "index.tsx",
   "private": false,
