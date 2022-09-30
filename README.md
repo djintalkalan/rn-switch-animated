@@ -10,10 +10,10 @@ install npm library
 yarn add rn-switch-animated
 ```
 
-This library is using @react-native-community/masked-view. Please install if not installed.
+This library is using @react-native-masked-view/masked-view. Please install if not installed.
 
 ```
-yarn add @react-native-community/masked-view
+yarn add @react-native-masked-view/masked-view
 ```
 
 (DEFAULT USED BUT CAN BE SKIPPED) This library also using react-native-reanimated v2 as default animation library, you have to install reanimated package. If you want to skip this, you must use Legacy switch from 'rn-switch-animated/legacy/LegacySwitch'.
