@@ -1,4 +1,4 @@
-import MaskedView from "@react-native-community/masked-view";
+import MaskedView from '@react-native-masked-view/masked-view';
 import React, { FC, useCallback, useEffect, useMemo, useRef } from "react";
 import { Animated, Easing, GestureResponderEvent, Pressable, StyleProp, StyleSheet, Text, TextStyle, View } from "react-native";
 
