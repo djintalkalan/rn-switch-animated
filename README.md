@@ -5,9 +5,14 @@ This is a switch component with animation. We can add custom text for on/off sta
 
 # INSTALLATION
 
-install npm library
+Install npm library
 ```
 yarn add rn-switch-animated
+```
+
+if using react-native-reanimated v2
+```
+yarn add rn-switch-animated@0.1.6
 ```
 
 This library is using @react-native-masked-view/masked-view. Please install if not installed.
@@ -16,19 +21,19 @@ This library is using @react-native-masked-view/masked-view. Please install if n
 yarn add @react-native-masked-view/masked-view
 ```
 
-(DEFAULT USED BUT CAN BE SKIPPED) This library also using react-native-reanimated v2 as default animation library, you have to install reanimated package. If you want to skip this, you must use Legacy switch from 'rn-switch-animated/legacy/LegacySwitch'.
+(DEFAULT USED BUT CAN BE SKIPPED) This library also using react-native-reanimated v3 as default animation library, you have to install reanimated package. If you want to skip this, you must use Legacy switch from 'rn-switch-animated/legacy/LegacySwitch'.
 ```
 yarn add react-native-reanimated
 ```
 
 # USAGE
 
-Import library if using react-native-reanimated v2
+Import library if using react-native-reanimated
 ```
 import Switch from 'rn-switch-animated';
 ```
 
-Import library if not using reanimated v2
+Import library if not using reanimated
 
 ```
 import Switch from 'rn-switch-animated/legacy/LegacySwitch';
